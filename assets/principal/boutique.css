@@ -8,7 +8,7 @@
 
 /* The frames */
 #boutique li{
-    background: #eee3db url(../demo_files/images/loading.gif) center no-repeat; /* Color of the frame behind and around the image */
+    background: #eee3db url(loading.gif) center no-repeat; /* Color of the frame behind and around the image */
     border: 1px solid; /* Outer border around frame */
     border-color: #f5eee9 #d0c2b6 #d0c2b6 #f5eee9;
 }

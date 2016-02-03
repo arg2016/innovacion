@@ -40,23 +40,21 @@ $document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets
 <div id="contenidoSlider">
     <!-- The Boutique HTML: -->
     <ul id="boutique">
+    <?php foreach ($slides as $slide) { ?>
         <li>
-            <a href="#">
-                <img src="http://localhost/innovacion/modules/mod_djimageslider/assets/principal/Desert.jpg" alt="">
-                <span>Description 1.</span>
+            <a href="<?php echo $slide->link; ?>">
+                <img src="<?php echo JURI::root().$slide->image; ?>" alt="">
+                <span><?php echo $slide->title; ?></span>
             </a>
         </li>
-        <li>
-            <a href="#">
-                <img src="http://localhost/innovacion/modules/mod_djimageslider/assets/principal/BANNER_MUJER_INDIGENA.jpg" alt="">
-                <span>RECEPCION DE SOLICITUDES HASTA EL 04 DE MARZO DE 2016</span>
-            </a>
-        </li>
-        <li><img src="http://localhost/innovacion/modules/mod_djimageslider/assets/principal/image7.jpg"></li>
-        <li><img src="http://localhost/innovacion/modules/mod_djimageslider/assets/principal/image6.jpg"></li>
-
-        <li><img src="http://localhost/innovacion/modules/mod_djimageslider/assets/principal/image9.jpg"></li>
+     <?php  }  ?>
+   
     </ul>
     <div id="bullets"></div>
     <!-- End of the Boutique HTML -->
+</div>
+
+
+<div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+
 </div>
