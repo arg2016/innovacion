@@ -1,6 +1,12 @@
 <?php
 // no direct access
-defined('_JEXEC') or die ('Restricted access'); ?>
+defined('_JEXEC') or die ('Restricted access'); 
+
+$document->addStyleSheet(JURI::root(true) . '/modules/' . $module->module . '/assets/camera.css');
+    $document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets/jquery.mobile.customized.min.js');
+    $document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets/jquery.easing.1.3.js');
+    $document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets/camera.min.js');
+?>
 
 <script>
 jQuery(function(){jQuery("#camera_wrap_1").camera({thumbnails:!0,height:"411px", hover: !1, pagination: !1})

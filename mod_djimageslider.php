@@ -56,47 +56,8 @@ if($params->get('slider_source')==1) {
 $document = JFactory::getDocument();
 JHTML::_('behavior.framework',true);
 
-
-if(!is_numeric($width = $params->get('image_width'))) $width = 240;
-if(!is_numeric($height = $params->get('image_height'))) $height = 180;
-if(!is_numeric($max = $params->get('max_images'))) $max = 20;
-if(!is_numeric($count = $params->get('visible_images'))) $count = 3;
-if(!is_numeric($spacing = $params->get('space_between_images'))) $spacing = 3;
-if($count>count($slides)) $count = count($slides);
-if($count<1) $count = 1;
-if($count>$max) $count = $max;
-$mid = $module->id;
-$slider_type = $params->get('slider_type',0);
-switch($slider_type){
-	case 2:
-		$slide_size = $width;
-		$count = 1;
-		break;
-	case 1:
-		$slide_size = $height + $spacing;
-		break;
-	case 0:
-	default:
-		$slide_size = $width + $spacing;
-		break;
-}
-
 //Dependiendo del la presentacion elegida se cargaran los archivos
-if ($params->get('layout') == "_:default") {
-
-   
-            $document->addStyleSheet(JURI::root(true) . '/modules/' . $module->module . '/assets/camera.css');
-    $document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets/jquery.mobile.customized.min.js');
-    $document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets/jquery.easing.1.3.js');
-    $document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets/camera.min.js');
-    
-}else {
- 
-    //Presentacion default
-	            $document->addStyleSheet(JURI::root(true) . '/modules/' . $module->module . '/assets/jstyle.css');
-    $document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets/jscript.js');
- 
-}
+//if ($params->get('layout') == "_:default") {}
 
 
 require JModuleHelper::getLayoutPath('mod_djimageslider', $params->get('layout','default'));

@@ -1,6 +1,10 @@
 <?php
 // no direct access
-defined('_JEXEC') or die ('Restricted access'); ?>
+defined('_JEXEC') or die ('Restricted access'); 
+
+ $document->addStyleSheet(JURI::root(true) . '/modules/' . $module->module . '/assets/jstyle.css');
+    $document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets/jscript.js');
+?>
 
 	<div id="lofass109" class="lof-ass">
         <div class="lofass-container  lof-css3  lof-snright">
