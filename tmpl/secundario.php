@@ -2,8 +2,9 @@
 // no direct access
 defined('_JEXEC') or die ('Restricted access'); 
 
+
  $document->addStyleSheet(JURI::root(true) . '/modules/' . $module->module . '/assets/jstyle.css');
-    $document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets/jscript.js');
+$document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets/jscript.js');
 ?>
 
 	<div id="lofass109" class="lof-ass">
