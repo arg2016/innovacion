@@ -49,7 +49,13 @@
 				</field>
 
 				<field name="limit_desc" type="text" default="" size="10" label="MOD_DJIMAGESLIDER_DESCRIPTION_LIMIT" description="MOD_DJIMAGESLIDER_DESCRIPTION_LIMIT_DESC" />
-
+                                <field type="spacer" label="&lt;hr &#47;&gt;" />
+                                
+                                <field type="spacer" label="SLIDER NOTICIAS" />
+                                <field name="autoplay" type="radio" class="btn-group" default="0" label="Autoplay" description="MOD_DJIMAGESLIDER_SHOW_DESCRIPTION_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
 			</fieldset>
 			
 			
