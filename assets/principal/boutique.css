@@ -17,7 +17,7 @@
 #boutique h6{
     margin: 0;
     line-height: 130%;
-    font-family: sans-serif;
+
     font-weight: normal;
     color: #222;
 }
@@ -25,7 +25,6 @@
 /* Description text of all frames */
 /* Note that this is the complete text layer, including the header inside */
 #boutique span{
-    font-family: Verdana, sans-serif;
     line-height: 120%;
     color: #444;
     background: #eee3db;
@@ -41,7 +40,7 @@
     font-size: 28px; /* Front frame header */
 }
 #boutique .front span{
-    font-size: 11px; /* Front frame description text */
+    font-size: 16px; /* Front frame description text */
 }
 
 /* The further back items */

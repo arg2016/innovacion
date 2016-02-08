@@ -44,7 +44,7 @@ $document->addScript(JURI::root(true) . '/modules/' . $module->module . '/assets
         <li>
             <a href="<?php echo $slide->link; ?>">
                 <img src="<?php echo JURI::root().$slide->image; ?>" alt="">
-                <span><?php echo $slide->title; ?></span>
+                <span class="item_titulo"><?php echo $slide->title; ?></span>
             </a>
         </li>
      <?php  }  ?>
