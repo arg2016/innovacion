@@ -36,7 +36,7 @@ if ($params->get('autoplay') == 0) {
             </div>
             <div class="pie">
                 <hr>
-                <a href="#">Leer mas</a>
+                <a href="<?php echo $slide->link; ?>">Leer mas</a>
             </div>
 
         </div>
