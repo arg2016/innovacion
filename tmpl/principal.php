@@ -27,4 +27,19 @@ jQuery(document).ready(function(){jQuery.each(jQuery("#boutique").children("li")
     </ul>
     <div id="bullets"></div>
     <!-- End of the Boutique HTML -->
+    
+    
 </div>
+
+<?php 
+echo '<script>        
+                    jQuery( document ).ready(function() {
+                    if("'.JURI::root().'"==="'.JURI::current().'"||"'.JURI::root().'index.php"==="'.JURI::current().'")
+                    {
+                         jQuery("div#contenidoSlider").css("display","block"); 
+                    }else {
+                         jQuery("div#contenidoSlider").css("display","none"); 
+                    }
+                });</script>';
+
+?>
